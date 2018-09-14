@@ -7,12 +7,16 @@ namespace BoardGame
 	class Player
 	{
 		private string _name;
-		private Tile _position;
+		private int _position;
+		private Status _status;
+		private int _speedMod;
 
 		public Player(string name)
 		{
 			_name = name;
-			_position = Board.Tiles[0];
+			_position = 0;
+			_status = Status.Healthy;
+			_speedMod = 0;
 		}
 	}
 }
