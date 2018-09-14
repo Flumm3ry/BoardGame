@@ -18,5 +18,12 @@ namespace BoardGame
 			_status = Status.Healthy;
 			_speedMod = 0;
 		}
+
+		public void Move(int places, bool speedModApplied)
+		{
+			_position += places;
+			if (speedModApplied)
+				_position += _speedMod;
+		}
 	}
 }
