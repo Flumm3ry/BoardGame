@@ -7,6 +7,7 @@ namespace BoardGame
 	class Dice
 	{
 		private int _value;
+		private string _diceImage;
 
 		private Random _rnd;
 
@@ -15,9 +16,10 @@ namespace BoardGame
 			_rnd = new Random();
 		}
 
-		public int roll()
+		public void roll()
 		{
-			return _rnd.Next(1, 6);
+			_value = _rnd.Next(1, 6);
+			_diceImage = "Dice" + _value.ToString();
 		}
 	}
 }

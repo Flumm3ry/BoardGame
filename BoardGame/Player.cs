@@ -25,11 +25,15 @@ namespace BoardGame
 			}
 		}
 
+		public Dice[] Dice { get => _dice; set => _dice = value; }
+
 		public void Move(int places, bool speedModApplied)
 		{
 			_position += places;
 			if (speedModApplied)
 				_position += _speedMod;
 		}
+
+
 	}
 }
