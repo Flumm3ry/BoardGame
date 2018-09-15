@@ -4,11 +4,11 @@ using System.Text;
 
 namespace BoardGame
 {
-	abstract class Tile
+	class NeutralTile : Tile
 	{
 		private int _position;
 
-		public Tile (int position)
+		public NeutralTile(int position) : base(position)
 		{
 			_position = position;
 		}

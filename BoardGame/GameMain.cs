@@ -10,7 +10,7 @@ namespace BoardGame
 		private Board _board;
 		private GameState _gameState;
 
-		public GameMain (Player[] players, Board board)
+		public GameMain (Player[] players, int boardLength)
 		{
 			_players = new List<Player>();
 
@@ -19,7 +19,7 @@ namespace BoardGame
 				_players.Add(p);
 			}
 
-			_board = board;
+			_board = new Board(boardLength);
 		}
 
 		public void DrawGame()
