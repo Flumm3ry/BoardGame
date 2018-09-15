@@ -4,10 +4,7 @@ using System.Text;
 
 namespace BoardGame
 {
-	enum Status
+	class GameState
 	{
-		Healthy,
-		Poisoned,
-		Bliss
 	}
 }
