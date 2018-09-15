@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BoardGame
 {
-	class Player
+	abstract class Player
 	{
 		private string _name;
 		private int _position;
