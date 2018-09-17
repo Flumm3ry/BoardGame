@@ -16,7 +16,10 @@ namespace BoardGame
 			_rnd = new Random();
 		}
 
-		public void roll()
+		public int Value { get => _value; set => _value = value; }
+		public string DiceImage { get => _diceImage; set => _diceImage = value; }
+
+		public void Roll()
 		{
 			_value = _rnd.Next(1, 6);
 			_diceImage = "Dice" + _value.ToString();

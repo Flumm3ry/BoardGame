@@ -25,6 +25,19 @@ namespace BoardGame
 			}
 		}
 
+		public virtual void Turn()
+		{
+			int totalRolled = 0;
+
+			foreach (Dice d in _dice)
+			{
+				d.Roll();
+				totalRolled += d.Value;
+			}
+
+			Move(totalRolled, true);
+		}
+
 		public Dice[] Dice { get => _dice; set => _dice = value; }
 
 		public void Move(int places, bool speedModApplied)
