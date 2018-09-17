@@ -39,7 +39,7 @@ namespace BoardGame
 			p.SpeedMod += mod;
 
 			return "You feel an empowering burst of energy and your speed has been increased by " + mod.ToString()
-					+ "your speed modifier is now " + p.SpeedMod;
+					+ " your speed modifier is now " + p.SpeedMod;
 		}
 
 		public string PositionMod(Player p)
