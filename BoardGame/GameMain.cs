@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BoardGame
 {
-	class GameMain
+	public class GameMain
 	{
 		private List<Player> _players;
 		private Board _board;

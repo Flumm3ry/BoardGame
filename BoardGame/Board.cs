@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BoardGame
 {
-	class Board
+	public class Board
 	{
 		private Tile[] _tiles;
 

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BoardGame
 {
-	enum AIPlayerNames
+	public enum AIPlayerNames
 	{
 		Jeff,
 		Jason,

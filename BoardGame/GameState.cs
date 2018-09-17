@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BoardGame
 {
-	class GameState
+	public class GameState
 	{
 	}
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BoardGame
 {
-	class NeutralTile : Tile
+	public class NeutralTile : Tile
 	{
 		private int _position;
 

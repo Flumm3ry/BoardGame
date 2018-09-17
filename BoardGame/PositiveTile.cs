@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BoardGame
 {
-	class PositiveTile : Tile
+	public class PositiveTile : Tile
 	{
 		private int _position;
 

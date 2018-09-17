@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BoardGame
 {
-	class AIPlayer : Player
+	public class AIPlayer : Player
 	{
 		public AIPlayer(string name): base(name)
 		{

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BoardGame
 {
-	class Dice
+	public class Dice
 	{
 		private int _value;
 		private string _diceImage;

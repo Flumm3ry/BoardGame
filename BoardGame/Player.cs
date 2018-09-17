@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BoardGame
 {
-	abstract class Player
+	public abstract class Player
 	{
 		private string _name;
 		private int _position;
@@ -39,6 +39,8 @@ namespace BoardGame
 		}
 
 		public Dice[] Dice { get => _dice; set => _dice = value; }
+		public int Position { get => _position;}
+		public string Name { get => _name;}
 
 		public void Move(int places, bool speedModApplied)
 		{
