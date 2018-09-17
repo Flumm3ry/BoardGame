@@ -17,7 +17,7 @@ namespace BoardGame
 		{
 			Random rnd = new Random();
 
-			int posEvent = rnd.Next(1, 2);
+			int posEvent = rnd.Next(1, 3);
 
 			switch (posEvent)
 			{
@@ -34,22 +34,24 @@ namespace BoardGame
 		{
 			Random rnd = new Random();
 
-			int mod = rnd.Next(1,4);
+			int mod = rnd.Next(1,5);
 
 			p.SpeedMod -= mod;
 
-			return "You ran into a trap that slowed your speed by " + mod.ToString();
+			return "You ran into a trap that slowed your speed by " + mod.ToString()
+					+ "your speed modifier is now " + p.SpeedMod; ;
 		}
 
 		public string PositionMod(Player p)
 		{
 			Random rnd = new Random();
 
-			int mod = rnd.Next(2, 10);
+			int mod = rnd.Next(2, 11);
 
 			p.Position += mod;
 
-			return "A wild phoenix carries you " + mod.ToString() + " spaces forwards";
+			return "A wild phoenix carries you " + mod.ToString() + " spaces forwards"
+					+ " you are now positioned at " + p.Position;
 		}
 	}
 }

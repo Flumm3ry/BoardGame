@@ -6,7 +6,15 @@ namespace BoardGame
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello, World!");
+			var jonny = new HumanPlayer("Jonny");
+			var papa = new HumanPlayer("Papa");
+
+			GameMain myGame = new GameMain(new Player[] {jonny, papa}, 100);
+
+			for (int i = 0; i < 7; i++)
+				myGame.PlayGame();
+
+			Console.ReadKey();
 		}
 	}
 }

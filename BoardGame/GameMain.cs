@@ -27,7 +27,8 @@ namespace BoardGame
 			foreach (Player p in _players)
 			{
 				p.Turn();
-				_board.Tiles[p.Position].SpecialEvent(p);
+				Console.WriteLine(p.Name + " is now at position " + p.Position);
+				Console.WriteLine(_board.Tiles[p.Position].SpecialEvent(p));
 			}
 		}
 

@@ -21,7 +21,7 @@ namespace BoardGame
 
 		public void Roll()
 		{
-			_value = _rnd.Next(1, 6);
+			_value = _rnd.Next(1, 7);
 			_diceImage = "Dice" + _value.ToString();
 		}
 	}

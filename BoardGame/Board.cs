@@ -16,7 +16,7 @@ namespace BoardGame
 			_tiles = new Tile[BoardLength];
 			for (int i = 0; i < BoardLength; i++)
 			{
-				tileType = rnd.Next(1, 3);
+				tileType = rnd.Next(1, 4);
 
 				switch(tileType)
 				{

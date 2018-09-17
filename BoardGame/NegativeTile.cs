@@ -17,7 +17,7 @@ namespace BoardGame
 		{
 			Random rnd = new Random();
 
-			int negEvent = rnd.Next(1, 2);
+			int negEvent = rnd.Next(1, 3);
 
 			switch(negEvent)
 			{
@@ -34,22 +34,24 @@ namespace BoardGame
 		{
 			Random rnd = new Random();
 
-			int mod = rnd.Next(1,4);
+			int mod = rnd.Next(1,5);
 
 			p.SpeedMod += mod;
 
-			return "You feel an empowering burst of energy and your speed has been increased by " + mod.ToString();
+			return "You feel an empowering burst of energy and your speed has been increased by " + mod.ToString()
+					+ "your speed modifier is now " + p.SpeedMod;
 		}
 
 		public string PositionMod(Player p)
 		{
 			Random rnd = new Random();
 
-			int mod = rnd.Next(2, 10);
+			int mod = rnd.Next(2, 11);
 
 			p.Position -= mod;
 
-			return "A sudden gust of wind knocks you back " + mod.ToString() + " spaces";
+			return "A sudden gust of wind knocks you back " + mod.ToString() + " spaces"
+					+ " you are now positioned at " + p.Position;
 		}
 	}
 }
