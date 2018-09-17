@@ -38,9 +38,10 @@ namespace BoardGame
 			Move(totalRolled, true);
 		}
 
-		public Dice[] Dice { get => _dice; set => _dice = value; }
-		public int Position { get => _position;}
+		public Dice[] Dice { get => _dice;}
+		public int Position { get => _position; set => _position = value; }
 		public string Name { get => _name;}
+		public int SpeedMod { get => _speedMod; set => _speedMod = value; }
 
 		public void Move(int places, bool speedModApplied)
 		{

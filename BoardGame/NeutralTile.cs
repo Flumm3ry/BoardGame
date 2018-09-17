@@ -13,9 +13,9 @@ namespace BoardGame
 			_position = position;
 		}
 
-		public override void SpecialEvent(Player player)
+		public override string SpecialEvent(Player player)
 		{
-
+			return "This is a blank tile";
 		}
 
 	}

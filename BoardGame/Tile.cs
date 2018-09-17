@@ -13,6 +13,6 @@ namespace BoardGame
 			_position = position;
 		}
 
-		abstract public void SpecialEvent(Player player);
+		abstract public string SpecialEvent(Player player);
 	}
 }
