@@ -22,6 +22,15 @@ namespace BoardGame
 			_board = new Board(boardLength);
 		}
 
+		public void PlayGame()
+		{
+			foreach (Player p in _players)
+			{
+				p.Turn();
+				_board.Tiles[p.Position].SpecialEvent(p);
+			}
+		}
+
 		public void DrawGame()
 		{
 

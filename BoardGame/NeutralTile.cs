@@ -12,5 +12,11 @@ namespace BoardGame
 		{
 			_position = position;
 		}
+
+		public override void SpecialEvent(Player player)
+		{
+
+		}
+
 	}
 }

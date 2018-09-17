@@ -25,7 +25,7 @@ namespace BoardGame
 			}
 		}
 
-		public virtual void Turn()
+		public void Turn()
 		{
 			int totalRolled = 0;
 
