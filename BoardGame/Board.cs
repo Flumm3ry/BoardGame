@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BoardGame
 {
-	public class Board
+	class Board
 	{
 		private Tile[] _tiles;
 
@@ -18,7 +18,7 @@ namespace BoardGame
 			{
 				tileType = rnd.Next(1, 4);
 
-				switch(tileType)
+				switch (tileType)
 				{
 					case 1:
 						_tiles[i] = new NegativeTile(i);
@@ -30,7 +30,7 @@ namespace BoardGame
 						_tiles[i] = new PositiveTile(i);
 						break;
 				}
-				
+
 			}
 		}
 
