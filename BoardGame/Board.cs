@@ -34,6 +34,27 @@ namespace BoardGame
 			}
 		}
 
+		public void Move(Player p)
+		{
+			while (p.CurrentMove != 0)
+			{
+				if (p.CurrentMove > 0)
+				{
+					p.Position++;
+					p.CurrentMove--;
+					Tiles[p.Position].Landed(p);
+				}
+
+				else
+				{
+					p.Position--;
+					p.CurrentMove++;
+					Tiles[p.Position].Landed(p);
+				}
+
+			}
+		}
+
 		public Tile[] Tiles { get => _tiles;}
 	}
 }
